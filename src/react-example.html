@@ -1,0 +1,16 @@
+<template>
+	<require from="react-element"></require>
+	<require from="test"></require>
+	<div>
+		<h1>This is the homepage</h1>
+		<h2>Let's render a React component</h2>
+
+		<button click.delegate="addData()">ADD</button>
+		<button click.delegate="deleteData()">Delete</button> ${someData.length}
+		<!-- Our custom element and data passed through to the bindable -->
+		<!-- <div class="container" style="height:500px;background:cornflowerblue;overflow:scroll"> -->
+			<react-element data.bind="someData"></react-element>
+		<!-- </div> -->
+		<!-- <test data.bind="someData "></test> -->
+	</div>
+</template>
